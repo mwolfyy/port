@@ -27,3 +27,19 @@
         align-self: center;
     }
 }
+.toolList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.toolItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-basis: calc(50% - 6px);
+
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+  }
+}
